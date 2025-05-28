@@ -1,33 +1,42 @@
-**SRAM-based In-Memory Computing Design for Edge Devices**
+# SRAM-based In-Memory Computing Design for Edge Devices
 
-This project explores an SRAM-based in-memory computing (IMC) architecture tailored for low-power edge devices. It integrates logic functionality directly within memory to reduce data movement and improve energy efficiency.
+This project explores an SRAM-based in-memory computing (IMC) architecture tailored for low-power edge devices. The design integrates logic functionality directly within memory cells to minimize data movement and enhance energy efficiency.
 
-**Project Highlights**
+---
 
-_6T SRAM Cell Design_: Designed and simulated a 6-transistor SRAM cell for read and write operations. Stability metrics such as Static Noise Margin (SNM) for both read and hold modes were characterized.
+## Project Highlights
 
-_Layout & Physical Verification_: Created the layout of the 6T SRAM cell and verified DRC and LVS using Assura.
+- **6T SRAM Cell Design**  
+  Designed and simulated a 6-transistor SRAM cell supporting reliable read and write operations. Characterized stability metrics such as Static Noise Margin (SNM) for both read and hold conditions.
 
-_Logic Integration_: Designed and verified a 4-transistor XOR circuit that operates on data from two SRAM cells at the layout level.
+- **Layout & Physical Verification**  
+  Created the physical layout of the 6T SRAM cell and performed Design Rule Check (DRC) and Layout Versus Schematic (LVS) verification using Assura.
 
-_SRAM Array Integration_: Implemented a 4×4 SRAM array with read/write peripheral circuitry and integrated the XOR logic using the gpdk45 PDK on Cadence Virtuoso.
+- **Logic Integration**  
+  Designed and verified a 4-transistor XOR logic circuit operating on data from two SRAM cells, verified at the layout level (DRC and LVS).
 
+- **SRAM Array Integration**  
+  Implemented a 4×4 SRAM array with associated read/write peripheral circuitry, integrating the XOR logic using the gpdk45 Process Design Kit (PDK) on Cadence Virtuoso.
 
-**Tools and Technologies**
+---
 
-Cadence Virtuoso (Schematic, Layout, Simulation)
+## Tools and Technologies
 
-Assura (DRC and LVS Verification)
+- Cadence Virtuoso (Schematic capture, Layout, and Simulation)  
+- Assura (DRC and LVS physical verification)  
+- gpdk45 (Generic 45nm Process Design Kit)  
+- Linux environment for design workflows and simulation
 
-gpdk45 (Generic 45nm PDK)
+---
 
-Linux environment for design and simulation workflows
+## Acknowledgments
 
+This project was developed as part of the Bachelor’s Thesis at Indian Institute of Information Technology Kottayam.
 
-**Acknowledgments**
+---
 
-This project was developed as part of the Bachelor’s Thesis at Indian Institute of Information Technology Kottayam. 
+## Contact
 
-Contact
+For questions or collaboration, please reach out:  
+**Email:** laahiriadusumilli157@gmail.com
 
-For questions or collaboration, contact: laahiriadusumilli157@gmail.com
